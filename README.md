@@ -14,9 +14,22 @@ The dataset contains dashcam video clips categorized as:
 - `rash/` – Aggressive or unsafe driving
 - `normal/` – Smooth, safe driving
 
+
+## Results
+
+🎬 **Example Input Video**  
+[View example_video.mp4](https://github.com/TejaNagaSriKallari/Rash-driving-detection/blob/main/truePositive.mp4)
+
+📷 **Prediction Result (Image)**  
+![Prediction Result](https://github.com/TejaNagaSriKallari/Rash-driving-detection/raw/main/result1.png)
+
+
+
 ## How to Run
 
 ```bash
 git clone https://github.com/TejaNagaSriKallari/Rash-driving-detection.git
 cd Rash-driving-detection
 pip install tensorflow numpy opencv-python matplotlib
+
+

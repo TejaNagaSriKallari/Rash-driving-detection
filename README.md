@@ -17,12 +17,18 @@ The dataset contains dashcam video clips categorized as:
 
 ## Results
 
-🎬 **Example Input Video**  
+**Example Input Video1**  
 [View example_video.mp4](truePositive.mp4)
 
-📷 **Prediction Result (Image)**  
+**Prediction Result1 (Image)**  
 ![Prediction Result](https://github.com/TejaNagaSriKallari/Rash-driving-detection/raw/main/result1.png)
 
+
+**Example Input Video2**  
+[View example_video.mp4](trueNegative.mp4)
+
+**Prediction Result2 (Image)**  
+![Prediction Result](https://github.com/TejaNagaSriKallari/Rash-driving-detection/raw/main/result2.png)
 
 
 ## How to Run

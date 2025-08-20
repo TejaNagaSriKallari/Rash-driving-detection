@@ -54,3 +54,38 @@ cd Rash-driving-detection
 # Install dependencies
 pip install tensorflow numpy opencv-python matplotlib
 ou’d like to add improvements, please fork the repo and submit a PR.
+```
+
+## 🌐 Web Application
+
+To make the model accessible, a MERN-based full-stack web application was built:
+
+Frontend (React + Vite + Tailwind) → Users can upload dashcam videos and view predictions.
+
+Backend (Node.js + Express) → Handles video upload, connects with ML model, returns results.
+
+Database (MongoDB Atlas) → Stores user activity & uploaded video records.
+
+ML Model (TensorFlow CNN + LSTM) → Performs video classification in backend workflow.
+
+## 🚀 Deployment
+
+Frontend (Vercel) → https://rash-driving-detection.vercel.app/home
+
+Backend (Render) → https://rash-driving-detection-2.onrender.com
+
+Database → MongoDB Atlas (cloud-hosted, private access)
+
+✅ Workflow: Upload video on frontend → Sent to backend API → ML model processes → Result displayed instantly.
+
+## 🛠️ Tech Stack
+
+Frontend → React, Vite, TailwindCSS
+
+Backend → Node.js, Express
+
+Database → MongoDB Atlas
+
+Machine Learning → TensorFlow (CNN + LSTM)
+
+Deployment → Vercel (frontend), Render (backend), MongoDB Atlas (database)

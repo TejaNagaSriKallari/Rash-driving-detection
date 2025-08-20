@@ -1,4 +1,4 @@
-# 🚗 Rash Driving Detection using CNN + LSTM  
+## 🚗 Rash Driving Detection using CNN + LSTM  
 
 This deep learning project detects **rash driving behavior** from CCTV footage using a combination of **Convolutional Neural Networks (CNN)** and **Long Short-Term Memory (LSTM)** networks.  
 The system can also be accessed through a deployed **MERN-based full-stack web application**.  

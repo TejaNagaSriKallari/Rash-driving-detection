@@ -1,8 +1,8 @@
 # 🚗 Rash Driving Detection using CNN + LSTM  
 
-This deep learning project detects **rash driving behavior** from dashcam videos using a combination of **Convolutional Neural Networks (CNN)** and **Long Short-Term Memory (LSTM)** networks.  
+This deep learning project detects **rash driving behavior** from CCTV footage using a combination of **Convolutional Neural Networks (CNN)** and **Long Short-Term Memory (LSTM)** networks.  
 The system can also be accessed through a deployed **MERN-based full-stack web application**.  
-
+Live Demo: [Rash Driving Detection App](https://rash-driving-detection.vercel.app/)
 ---
 
 ## 🧠 Model Summary  
@@ -15,7 +15,7 @@ The system can also be accessed through a deployed **MERN-based full-stack web a
 
 ## 📂 Dataset  
 
-The dataset contains dashcam video clips categorized as:  
+The dataset contains driving video clips categorized as:  
 
 - `rash/` → Aggressive or unsafe driving  
 - `normal/` → Smooth, safe driving  
@@ -54,13 +54,24 @@ cd Rash-driving-detection
 # Install dependencies
 pip install tensorflow numpy opencv-python matplotlib
 ou’d like to add improvements, please fork the repo and submit a PR.
+
+
+#Backend Setup (Node.js + Express + ML)
+cd rash-driving-backend
+npm install
+npm start
+
+# Frontend Setup (React + Vite)
+cd rash-driving-frontend
+npm install
+npm run dev
 ```
 
 ## 🌐 Web Application
 
 To make the model accessible, a MERN-based full-stack web application was built:
 
-Frontend (React + Vite + Tailwind) → Users can upload dashcam videos and view predictions.
+Frontend (React + Vite + Tailwind) → Users can upload CCTV footage and view predictions.
 
 Backend (Node.js + Express) → Handles video upload, connects with ML model, returns results.
 
@@ -70,7 +81,7 @@ ML Model (TensorFlow CNN + LSTM) → Performs video classification in backend wo
 
 ## 🚀 Deployment
 
-Frontend (Vercel) → https://rash-driving-detection.vercel.app/home
+Frontend (Vercel) → https://rash-driving-detection.vercel.app/
 
 Backend (Render) → https://rash-driving-detection-2.onrender.com
 

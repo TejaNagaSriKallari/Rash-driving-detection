@@ -1,41 +1,100 @@
-# Rash Driving Detection using CNN + LSTM
+🚗 Rash Driving Detection using CNN + LSTM
 
-This deep learning project detects rash driving behavior from dashcam videos using a combination of Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks. The model processes video frames and classifies the driving pattern as either "rash" or "normal".
+This project detects rash driving behavior from dashcam videos using Deep Learning.
+It combines Convolutional Neural Networks (CNN) to extract spatial features from video frames and Long Short-Term Memory (LSTM) networks to capture temporal dependencies, making it effective for video-based classification.
 
-## Model Summary
+👉 Live Demo: Rash Driving Detection App
 
-- CNN extracts spatial features from each frame.
-- LSTM captures temporal driving behavior across frames.
-- The final prediction indicates whether the input video shows rash driving.
+📌 Features
 
-## Dataset
+Upload dashcam video and get rash/normal classification.
 
-The dataset contains dashcam video clips categorized as:
-- `rash/` – Aggressive or unsafe driving
-- `normal/` – Smooth, safe driving
+CNN extracts frame-level spatial features.
 
+LSTM models temporal patterns across consecutive frames.
 
-## Results
+Full-stack deployment with:
 
-**Example Input Video1**  
-[View example_video.mp4](truePositive.mp4)
+Frontend: React + Vite (deployed on Vercel)
 
-**Prediction Result1 (Image)**  
-![Prediction Result](https://github.com/TejaNagaSriKallari/Rash-driving-detection/raw/main/result1.png)
+Backend + ML model: Node.js + Express + MongoDB + TensorFlow (deployed on Render)
 
+🧠 Model Summary
 
-**Example Input Video2**  
-[View example_video.mp4](trueNegative.mp4)
+CNN → learns frame-level driving patterns (lane change, speed cues, etc.)
 
-**Prediction Result2 (Image)**  
-![Prediction Result](https://github.com/TejaNagaSriKallari/Rash-driving-detection/raw/main/result2.png)
+LSTM → analyzes sequence of frames for temporal behavior
 
+Output → Binary classification:
 
-## How to Run
+rash 🚨 → Aggressive or unsafe driving
 
-```bash
+normal ✅ → Safe, smooth driving
+
+📂 Dataset
+
+The dataset contains dashcam video clips organized into two categories:
+
+rash/ → Aggressive or unsafe driving
+
+normal/ → Safe driving
+
+Each video was split into frames before training.
+
+📊 Results
+
+Example Input Video 1
+🎥 truePositive.mp4
+
+🟢 Prediction: Rash Driving
+
+Example Input Video 2
+🎥 trueNegative.mp4
+
+🟢 Prediction: Normal Driving
+
+⚙️ Installation & Setup
+🔹 Clone the repo
 git clone https://github.com/TejaNagaSriKallari/Rash-driving-detection.git
 cd Rash-driving-detection
-pip install tensorflow numpy opencv-python matplotlib
+
+🔹 Backend (Node.js + Express + MongoDB + ML Integration)
+cd rash-driving-backend
+npm install
+npm start
+
+🔹 Frontend (React + Vite)
+cd rash-driving-frontend
+npm install
+npm run dev
 
 
+App runs on:
+
+Frontend → http://localhost:5173
+
+Backend → http://localhost:3001
+
+🛠️ Tech Stack
+
+Deep Learning: TensorFlow, Keras, CNN, LSTM
+
+Computer Vision: OpenCV, NumPy, Matplotlib
+
+Backend: Node.js, Express, MongoDB, JWT Auth
+
+Frontend: React, Vite, Tailwind CSS
+
+Deployment: Render (backend + ML), Vercel (frontend)
+
+🚀 Deployment
+
+Frontend (React) → Vercel
+
+Backend + ML (Node + TensorFlow) → Render
+
+Database → MongoDB Atlas
+
+🤝 Contributing
+
+Pull requests are welcome! If you’d like to add improvements, please fork the repo and submit a PR.
